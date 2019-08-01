@@ -1,6 +1,12 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 
+from core import models
+
+
+def sample_user(email='test@email.com', password='testpass'):
+    """Create a sample user"""
+    return get_user_model().objects.create_user(email, password)
 
 class ModelTests(TestCase):
 
@@ -30,3 +36,13 @@ class ModelTests(TestCase):
         """Test creating user with no email raises error"""
         with self.assertRaises(ValueError):
             get_user_model().objects.create_user(None, 'test123')
+
+    def test_wall_str(self):
+        """Test the ingredient string representation"""
+        wall = models.Wall.objects.create(
+            user=sample_user(),
+            title='Hello World!',
+            body='Hello World from inside wall post'
+        )
+
+        self.assertEqual(str(wall), wall.title)
