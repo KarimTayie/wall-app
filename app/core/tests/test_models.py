@@ -39,7 +39,7 @@ class ModelTests(TestCase):
             get_user_model().objects.create_user(None, 'test123')
 
     def test_wall_str(self):
-        """Test the ingredient string representation"""
+        """Test the wall string representation"""
         wall = models.Wall.objects.create(
             user=sample_user(),
             title='Hello World!',
