@@ -22,7 +22,7 @@ class CreateUserView(generics.CreateAPIView):
             [email]
         )
         serializer.save()
-        
+
 
 class CreateTokenView(ObtainAuthToken):
     """Create a new auth token for user"""

@@ -21,7 +21,8 @@ class PublicWallApiTests(TestCase):
         self.client = APIClient()
 
     def test_login_not_required(self):
-        """Test that login is not required to get request on the wall endpoint"""
+        """Test that login is not required to get request
+            on the wall endpoint"""
         Wall.objects.create(
             user=self.user,
             title='Hello World!',
@@ -68,7 +69,8 @@ class PrivateWallApiTests(TestCase):
         self.client.force_authenticate(self.user)
 
     def test_login_not_required(self):
-        """Test that login is not required to get request on the wall endpoint"""
+        """Test that login is not required to
+            get request on the wall endpoint"""
         Wall.objects.create(
             user=self.user,
             title='Hello World!',

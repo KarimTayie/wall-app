@@ -8,7 +8,7 @@ from wall.serializers import WallSerializer
 class ListWallPostsView(generics.ListAPIView):
     queryset = Wall.objects.all()
     serializer_class = WallSerializer
-    
+
 
 class CreateWallPostsView(generics.CreateAPIView):
     serializer_class = WallSerializer
