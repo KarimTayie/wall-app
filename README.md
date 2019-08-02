@@ -96,13 +96,13 @@ $ docker-compose up --build
 To run the unit tests, run this command inside app folder:
 
 ```json
-$ python manage.py test
+$ python manage.py test && flake8
 ```
 
 If you are using docker, run this command inside app folder:
 
 ```json
-$ docker-compose run app sh -c "python manage.py test"
+$ docker-compose run app sh -c "python manage.py test && flake8"
 ```
 
 ## API Doc
