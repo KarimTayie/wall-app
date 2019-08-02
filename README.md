@@ -10,7 +10,6 @@ The Wall App is a website that allows users to register, login, and write on a w
 
 - Wall (guest): Guests as well as authed users can see all of the messages on the wall.
 
-
 ## 	Prerequisites
 
 Install virtualenv
@@ -52,7 +51,6 @@ Install all project dependencies
 $ pip install -r /requirements.txt
 ```
 
-
 ## How to run
 
 ### Default
@@ -90,7 +88,6 @@ Build the Docker image:
 $ docker-compose up --build
 ```
 
-
 ## Unit Tests
 
 To run the unit tests, run this command inside app folder:
@@ -109,3 +106,8 @@ $ docker-compose run app sh -c "python manage.py test && flake8"
 
 Postman API collection link:
 [wall-api Postman collection](https://www.getpostman.com/collections/d0f532a9d1631756bb45)
+
+## Travis CI
+
+Travis CI:
+[wall-api Travis CI link](https://travis-ci.org/KarimTayie/wall-app)
