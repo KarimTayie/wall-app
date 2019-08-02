@@ -10,7 +10,7 @@ from core.models import Wall
 from wall.serializers import WallSerializer
 
 
-POST_WALL_URL = reverse('wall:post')
+POST_WALL_URL = reverse('wall:create')
 LIST_WALL_URL = reverse('wall:list')
 
 
