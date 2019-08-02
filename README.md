@@ -104,3 +104,8 @@ If you are using docker, run this command inside app folder:
 ```json
 $ docker-compose run app sh -c "python manage.py test"
 ```
+
+## API Doc
+
+Postman API collection link:
+[wall-api Postman collection](https://www.getpostman.com/collections/d0f532a9d1631756bb45)
