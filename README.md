@@ -77,7 +77,6 @@ Run server on port 8000:
 $ python manage.py runserver 8000
 ```
 
-
 ## Docker
 
 It is recommended to run the app using docker:
